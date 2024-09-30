@@ -1,0 +1,34 @@
+html {
+    width: 100%;
+    height: 100%; 
+}
+.box {
+    width: 23%; 
+    margin: 5px; 
+    display: inline-block; 
+    text-align: center; 
+}
+img {
+    width: 100%; 
+    height: auto; 
+}
+.add {
+    margin-top: 5px; 
+    font-size: 16px; 
+}
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: pink;
+    }
+    .box {
+        width: calc(100%/2 - 4px)
+    }
+}
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: rgb(193, 221, 35);
+    }
+    .box {
+        width: 90%; 
+    }
+}

@@ -1,0 +1,193 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+}
+
+.container .header {
+    display: flex;
+    width: 100%;
+    height: 7%;
+    align-items: center;
+}
+
+.header .search {
+    width: 25%;
+    height: 70%;
+    border: 1px solid;
+}
+
+.header .menu {
+    width: 40%;
+    height: 70%;
+    border: 1px solid;
+    margin-left: 7%;
+}
+
+.header .myAcc {
+    width: 20%;
+    height: 70%;
+    border: 1px solid;
+    margin-left: auto;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 93%;
+    margin: 5px 0;
+}
+
+.main .side-bar {
+    width: 25%;
+    height: 100%;
+}
+
+.side-bar1 {
+    width: 100%;
+    height: 70%;
+    border: 1px solid;
+}
+
+.side-bar2 {
+    width: 100%;
+    height: 30%;
+    border: 1px solid;
+    margin-top: 1%;
+}
+
+.mid {
+    width: 40%;
+    height: 100%;
+
+    margin-left: 7%;
+    overflow: scroll;
+}
+
+.mid-top {
+    width: 100%;
+    height: 20%;
+
+}
+
+.post {
+    width: 90%;
+    margin-left: 5%;
+    height: 45%;
+    border: 1px solid;
+}
+
+.post1 {
+    width: 26.65%;
+    height: 25%;
+    border: 1px solid;
+    float: left;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.mid-share {
+    height: 40%;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.share1 {
+    height: 100%;
+    width: 30%;
+    border: 1px solid;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.main .mid-new {
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.new1 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    margin-top: 10px;
+}
+
+.side-right {
+    width: 20%;
+    height: 100%;
+    margin-left: auto;
+}
+
+.mess {
+    width: 100%;
+    height: 80%;
+    border: 1px solid;
+}
+
+.groud {
+    width: 100%;
+    height: 20%;
+    margin-top: 1%;
+    border: 1px solid;
+}
+
+@media only screen and (max-width: 1500px) {
+    body {
+        background-color: pink;
+    }
+
+    .side-bar {
+        display: none;
+    }
+
+    .main .mid {
+        width: 60%;
+    }
+
+    .mid-bot .item {
+        width: 100%;
+    }
+
+    .mid-bot {
+        overflow: scroll;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background-color: burlywood;
+    }
+
+    .side-bar {
+        display: none;
+    }
+
+    .main .mid {
+        width: 100%;
+    }
+
+    .mid-bot .item {
+        width: 100%;
+    }
+
+    .mid-bot {
+        overflow: scroll;
+    }
+
+    .side-bar {
+        display: none;
+    }
+    .side-right{
+        display: none;
+    }
+}
